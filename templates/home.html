@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Medical Manager{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1 class="display-4 mb-4">Bienvenido a Medical Manager</h1>
+            <p class="lead mb-4">Sistema de gestión médica para profesionales de la salud</p>
+            
+            <div class="mt-5">
+                <a href="{% url 'accounts:login' %}" class="btn btn-primary btn-lg me-3">Iniciar Sesión</a>
+                <a href="{% url 'accounts:register' %}" class="btn btn-outline-primary btn-lg">Registrarse</a>
+            </div>
+            
+            <div class="mt-5">
+                <h2 class="h4 mb-3">¿Qué puedes hacer con Medical Manager?</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="h5">Gestión de Pacientes</h3>
+                                <p>Administra la información de tus pacientes de manera eficiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="h5">Notas Médicas</h3>
+                                <p>Crea y gestiona las notas médicas de tus consultas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="h5">Seguimiento</h3>
+                                <p>Realiza un seguimiento del progreso de tus pacientes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
